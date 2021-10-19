@@ -21,7 +21,7 @@
 								   
 module laser500_mist 
 ( 
-   input [1:0] 	CLOCK_27,      // 27 MHz board clock 
+	input       	CLOCK_27,      // 27 MHz board clock 
 	
 	// SDRAM interface
 	inout  [15:0] 	SDRAM_DQ, 		// SDRAM Data bus 16 Bits
@@ -54,7 +54,10 @@ module laser500_mist
 	
 	// other
 	output         LED,
+	output         UART_TX,
 	input          UART_RX,
+	output [15:0]  DAC_L,
+	output [15:0]  DAC_R,
 	output         AUDIO_L,
 	output         AUDIO_R
 );
@@ -446,7 +449,7 @@ wire pll_locked;
 wire F14Mx2;
 
 pll pll (
-	 .inclk0 ( CLOCK_27[0]   ),
+	 .inclk0 ( CLOCK_27      ),
 	 .locked ( pll_locked    ),        // PLL is running stable
 	 .c0     ( F14M          ),        // video generator clock frequency 14.77873 MHz
 	 .c1     ( SDRAM_CLK     ),        // F14M x 8, phase shifted 	 
@@ -594,6 +597,8 @@ always @(posedge F14M) begin
 	AUDIO_R <= audio;
 end
 
+assign DAC_L = { BUZZER ^ CASIN ^ (~CASOUT), 15'b0000000 };
+assign DAC_R = { BUZZER ^ CASIN ^ (~CASOUT), 15'b0000000 };
 
 /*
 // CASOUT low pass filter (disabled for now)
