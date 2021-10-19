@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue Oct 19 10:16:16 2021
+Fitter Status : Successful - Tue Oct 19 11:35:28 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : laser500_neptuno
 Top-level Entity Name : neptuno_top
 Family : Cyclone IV E
 Device : EP4CE55F23C8
 Timing Models : Final
-Total logic elements : 7,211 / 55,856 ( 13 % )
-    Total combinational functions : 6,763 / 55,856 ( 12 % )
+Total logic elements : 7,208 / 55,856 ( 13 % )
+    Total combinational functions : 6,761 / 55,856 ( 12 % )
     Dedicated logic registers : 2,636 / 55,856 ( 5 % )
 Total registers : 2636
 Total pins : 82 / 325 ( 25 % )

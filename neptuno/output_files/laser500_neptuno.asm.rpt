@@ -1,5 +1,5 @@
 Assembler report for laser500_neptuno
-Tue Oct 19 10:16:58 2021
+Tue Oct 19 11:35:34 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: E:/neptuno/!Forks/Laser500_MiST/neptuno/output_files/laser500_neptuno.sof
-  6. Assembler Device Options: E:/neptuno/!Forks/Laser500_MiST/neptuno/output_files/laser500_neptuno.rbf
+  5. Assembler Device Options: laser500_neptuno.sof
+  6. Assembler Device Options: laser500_neptuno.rbf
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 19 10:16:58 2021 ;
+; Assembler Status      ; Successful - Tue Oct 19 11:35:34 2021 ;
 ; Revision Name         ; laser500_neptuno                      ;
 ; Top-level Entity Name ; neptuno_top                           ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,34 +53,34 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------+
-; Assembler Generated Files                                                 ;
-+---------------------------------------------------------------------------+
-; File Name                                                                 ;
-+---------------------------------------------------------------------------+
-; E:/neptuno/!Forks/Laser500_MiST/neptuno/output_files/laser500_neptuno.sof ;
-; E:/neptuno/!Forks/Laser500_MiST/neptuno/output_files/laser500_neptuno.rbf ;
-+---------------------------------------------------------------------------+
++--------------------------------------------------------------------+
+; Assembler Generated Files                                          ;
++--------------------------------------------------------------------+
+; File Name                                                          ;
++--------------------------------------------------------------------+
+; /home/user/Laser500_MiST/neptuno/output_files/laser500_neptuno.sof ;
+; /home/user/Laser500_MiST/neptuno/output_files/laser500_neptuno.rbf ;
++--------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: E:/neptuno/!Forks/Laser500_MiST/neptuno/output_files/laser500_neptuno.sof ;
-+----------------+------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                            ;
-+----------------+------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x008BBDAF                                                                         ;
-; Checksum       ; 0x008BBDAF                                                                         ;
-+----------------+------------------------------------------------------------------------------------+
++------------------------------------------------+
+; Assembler Device Options: laser500_neptuno.sof ;
++----------------+-------------------------------+
+; Option         ; Setting                       ;
++----------------+-------------------------------+
+; JTAG usercode  ; 0x008B187D                    ;
+; Checksum       ; 0x008B187D                    ;
++----------------+-------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: E:/neptuno/!Forks/Laser500_MiST/neptuno/output_files/laser500_neptuno.rbf ;
-+---------------------+-------------------------------------------------------------------------------+
-; Option              ; Setting                                                                       ;
-+---------------------+-------------------------------------------------------------------------------+
-; Raw Binary File     ;                                                                               ;
-;  Compression Ratio  ; 1                                                                             ;
-+---------------------+-------------------------------------------------------------------------------+
++------------------------------------------------+
+; Assembler Device Options: laser500_neptuno.rbf ;
++---------------------+--------------------------+
+; Option              ; Setting                  ;
++---------------------+--------------------------+
+; Raw Binary File     ;                          ;
+;  Compression Ratio  ; 1                        ;
++---------------------+--------------------------+
 
 
 +--------------------+
@@ -89,18 +89,18 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Oct 19 10:16:43 2021
+    Info: Processing started: Tue Oct 19 11:35:31 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off laser500_neptuno -c laser500_neptuno
-Warning (125092): Tcl Script File top.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE top.qip
+Warning (125092): Tcl Script File ../zxspectrum.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE ../zxspectrum.qip
 Warning (125092): Tcl Script File ../sys/sys.qip not found
     Info (125063): set_global_assignment -name QIP_FILE ../sys/sys.qip
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 572 megabytes
-    Info: Processing ended: Tue Oct 19 10:16:58 2021
-    Info: Elapsed time: 00:00:15
+    Info: Peak virtual memory: 840 megabytes
+    Info: Processing ended: Tue Oct 19 11:35:34 2021
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

@@ -8,8 +8,6 @@ set_global_assignment -name QIP_FILE "../mist-modules/mist.qip"
 set_global_assignment -name VHDL_FILE "../mist-modules/dac.vhd"
 set_global_assignment -name SYSTEMVERILOG_FILE "../mist-modules/cofi.sv"
 set_global_assignment -name VERILOG_FILE "../mist-modules/arcade_inputs.v"
-set_global_assignment -name VHDL_FILE ../t80/T80pa.vhd
-set_global_assignment -name VHDL_FILE ../t80/T80_Reg.vhd
 set_global_assignment -name SYSTEMVERILOG_FILE ../laser500_mist.sv
 set_global_assignment -name VERILOG_FILE ../eraser.v
 set_global_assignment -name VERILOG_FILE "../mist-modules/data_io.v"
@@ -27,8 +25,4 @@ set_global_assignment -name VHDL_FILE ../ps2_intf.vhd
 set_global_assignment -name QIP_FILE pll.qip
 set_global_assignment -name SIGNALTAP_FILE ../laser500.stp
 set_global_assignment -name VHDL_FILE ../rc_filter_1o.vhd
-set_global_assignment -name VHDL_FILE ../t80/T80_Pack.vhd
-set_global_assignment -name VHDL_FILE ../t80/T80_MCode.vhd
-set_global_assignment -name VHDL_FILE ../t80/T80_ALU.vhd
-set_global_assignment -name VHDL_FILE ../t80/T80.vhd
-set_global_assignment -name QIP_FILE ../t80/T80.qip
+set_global_assignment -name QIP_FILE ../T80/T80.qip

@@ -1,0 +1,42 @@
+0x00000000 Section: ../..//lib832/crt0.a,.text.startup
+0x0000000d    _InterruptVector
+0x00000029 Section: ../..//lib832/crt0.a,.text.interrupt
+0x0000002a Section: ../..//lib832/crt0.a,.text.premain2
+0x0000002d Section: ../..//lib832/crt0.a,.text
+0x00000000    _STACKSIZE
+0x0000002d Section: ../..//lib832/crt0.a,.text.premain
+0x0000002d    _premain
+0x00000085 Section: ../..//lib832/lib832.a,.text.0
+0x0000011f Section: ../..//lib832/lib832.a,.rodata
+0x00000130 Section: ../..//lib832/lib832.a,.text.1
+0x00000161 Section: ../..//lib832/lib832.a,.text.2
+0x00000320 Section: ../..//lib832/lib832.a,.text.4
+0x00000320    _printf
+0x00000333 Section: ../..//lib832/lib832.a,.text.0
+0x0000034e Section: (null),.text._div_32by32
+0x0000034e    _div_u32byu32
+0x00000382    _div_s32bys32
+0x000003b3 Section: divtest.o,.text.0
+0x000003b3    _sdiv
+0x000003f7 Section: divtest.o,.rodata
+0x000004f5 Section: divtest.o,.text.1
+0x000004f5    _smod
+0x00000532 Section: divtest.o,.text.2
+0x00000532    _udiv
+0x0000056f Section: divtest.o,.text.3
+0x0000056f    _umod
+0x000005ac Section: divtest.o,.text.4
+0x000005ac    _main
+0x0000068e Section: <internal>,__ctors_start__
+0x0000068e    __ctors_start__
+0x0000068e Section: <internal>,__ctors_end__
+0x0000068e    __ctors_end__
+0x0000068e Section: <internal>,__dtors_start__
+0x0000068e    __dtors_start__
+0x0000068e Section: <internal>,__dtors_end__
+0x0000068e    __dtors_end__
+0x0000068e Section: <internal>,__bss_start__
+0x00000690    __bss_start__
+0x00000690 Section: ../..//lib832/lib832.a,.bss
+0x000006a0 Section: <internal>,__bss_end__
+0x000006a0    __bss_end__

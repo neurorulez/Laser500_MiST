@@ -1,5 +1,5 @@
 Flow report for laser500_neptuno
-Tue Oct 19 10:17:12 2021
+Tue Oct 19 11:35:41 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 19 10:16:58 2021       ;
+; Flow Status                        ; Successful - Tue Oct 19 11:35:34 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; laser500_neptuno                            ;
 ; Top-level Entity Name              ; neptuno_top                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE55F23C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 7,211 / 55,856 ( 13 % )                     ;
-;     Total combinational functions  ; 6,763 / 55,856 ( 12 % )                     ;
+; Total logic elements               ; 7,208 / 55,856 ( 13 % )                     ;
+;     Total combinational functions  ; 6,761 / 55,856 ( 12 % )                     ;
 ;     Dedicated logic registers      ; 2,636 / 55,856 ( 5 % )                      ;
 ; Total registers                    ; 2636                                        ;
 ; Total pins                         ; 82 / 325 ( 25 % )                           ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/19/2021 10:13:54 ;
+; Start date & time ; 10/19/2021 11:33:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; laser500_neptuno    ;
 +-------------------+---------------------+
@@ -81,7 +81,7 @@ refer to the applicable agreement for further details.
 ; AUTO_MERGE_PLLS                                        ; Off                                                                 ; On                 ; --          ; --         ;
 ; AUTO_RESOURCE_SHARING                                  ; On                                                                  ; Off                ; --          ; --         ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES ; -- (Not supported for targeted family)                              ; Care               ; --          ; --         ;
-; COMPILER_SIGNATURE_ID                                  ; 1096454557493.163463123411660                                       ; --                 ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                                  ; 52240168049.163463599907410                                         ; --                 ; --          ; --         ;
 ; ENABLE_CLOCK_LATENCY                                   ; On                                                                  ; Off                ; --          ; --         ;
 ; ENABLE_RECOVERY_REMOVAL_ANALYSIS                       ; On                                                                  ; Off                ; --          ; --         ;
 ; FINAL_PLACEMENT_OPTIMIZATION                           ; Always                                                              ; Automatically      ; --          ; --         ;
@@ -97,10 +97,8 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                                              ; ../DeMiSTify/controller/../EightThirtyTwo/RTL/debug_fifo_altera.cmp ; --                 ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS                                ; All                                                                 ; --                 ; --          ; --         ;
 ; OPTIMIZE_POWER_DURING_FITTING                          ; Off                                                                 ; Normal compilation ; --          ; --         ;
-; PARTITION_COLOR                                        ; -- (Not supported for targeted family)                              ; --                 ; neptuno_top ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL                    ; -- (Not supported for targeted family)                              ; --                 ; neptuno_top ; Top        ;
-; PARTITION_NETLIST_TYPE                                 ; -- (Not supported for targeted family)                              ; --                 ; neptuno_top ; Top        ;
 ; PLACEMENT_EFFORT_MULTIPLIER                            ; 4.0                                                                 ; 1.0                ; --          ; --         ;
+; PRE_FLOW_SCRIPT_FILE                                   ; quartus_sh:.././build_id.tcl                                        ; --                 ; --          ; --         ;
 ; PRE_MAPPING_RESYNTHESIS                                ; On                                                                  ; Off                ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY                               ; output_files                                                        ; --                 ; --          ; --         ;
 ; REMOVE_REDUNDANT_LOGIC_CELLS                           ; On                                                                  ; Off                ; --          ; --         ;
@@ -120,24 +118,24 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 767 MB              ; 00:01:06                           ;
-; Fitter                    ; 00:01:30     ; 1.1                     ; 1576 MB             ; 00:02:02                           ;
-; Assembler                 ; 00:00:15     ; 1.0                     ; 572 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:11     ; 1.4                     ; 750 MB              ; 00:00:10                           ;
-; Total                     ; 00:02:46     ; --                      ; --                  ; 00:03:21                           ;
+; Analysis & Synthesis      ; 00:00:42     ; 1.0                     ; 1079 MB             ; 00:00:41                           ;
+; Fitter                    ; 00:01:24     ; 1.0                     ; 1293 MB             ; 00:01:21                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 840 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 900 MB              ; 00:00:06                           ;
+; Total                     ; 00:02:15     ; --                      ; --                  ; 00:02:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; PC-WIN7          ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; PC-WIN7          ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; PC-WIN7          ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; PC-WIN7          ; Windows 7 ; 6.1        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; ubuntu           ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Fitter                    ; ubuntu           ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Assembler                 ; ubuntu           ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; TimeQuest Timing Analyzer ; ubuntu           ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------
